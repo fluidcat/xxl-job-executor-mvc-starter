@@ -10,7 +10,7 @@ spring boot ：2.3.3.RELEASE
 #### 添加依赖
 ```xml
         <dependency>
-            <groupId>com.triumen</groupId>
+            <groupId>io.github.fluidcat</groupId>
             <artifactId>xxl-job-executor-mvc-starter</artifactId>
             <version>1.0.0</version>
         </dependency>
