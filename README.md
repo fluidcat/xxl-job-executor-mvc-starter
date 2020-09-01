@@ -7,6 +7,14 @@ xxl-job-core：2.2.0
 spring boot ：2.3.3.RELEASE
 
 ### 使用
+#### 安装
+```shell
+git clone https://github.com/fluidcat/xxl-job-executor-mvc-starter.git
+
+cd xxl-job-executor-mvc-starter
+
+mvn install
+```  
 #### 添加依赖
 ```xml
         <dependency>
