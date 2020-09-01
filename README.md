@@ -28,14 +28,15 @@ mvn install
 xxl:
   job:
     executor:
-      admin-addresses: http://192.168.0.85:7201/job-admin
-      admin-accessToken: mfsd
-      app-name: mfsd-xxl-job-simple
+      admin-addresses: {xxl-job admin address}
+      admin-accessToken: {accessToken}
+      app-name: xxl-job-executor-simple
       # 这里后缀必须和uri-root相同
-      address: http://10.8.1.36:${server.port}/xxl-job/simple
+      address: http://10.8.1.36:${server.port}${xxl.job.executor.uri-root}
       log-path: /logs/xxl-job
       log-retention-days: 3
-      uri-root: /xxl-job/simple
+      # 建议为执行器的接口设置前缀，区分其他业务接口
+      uri-root: /e/xxl-job/simple
 server:
   port: 8080
 ```
